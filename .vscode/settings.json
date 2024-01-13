@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/e7987c48-6bca-47a9-ab77-fc317f96387d/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Flick",
+  "appService.deploySubpath": "."
+}

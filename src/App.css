@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope");
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h3,
+h4,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 1rem;
+  background-color: white;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-family: Manrope;
+  font-style: normal;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 98px;
+  text-align: center;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TheatresList Page */
+.theatreView {
+  margin-left: 100px;
+}
+
+.TheatreList {
+  width: 30vw;
+  text-align: center;
+  float: left;
+  /* margin-left: 5%; */
+}
+.TheatreInfo {
+  visibility: hidden;
+  margin-top: 5%;
+  margin-right: 8%;
+  width: 600px;
+  float: right;
+}
+.WatcherInfo {
+  display: block;
+  margin: auto;
+  margin-top: -2%;
+  width: 60%;
+  background-color: #e5e5e5;
+  height: 40vh;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+}
+.TheatreMatches {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  width: 60%;
+  height: 30vh;
+  border-radius: 5px;
+  background-color: #e16363;
+}
+.scrollTextUsers {
+  margin: auto;
+  margin-top: -5%;
+  width: 70%;
+  height: 8vh;
+  overflow: auto;
+  font-size: 12px;
+  font-family: Roboto;
+}
+.scrollTextMatches {
+  margin: auto;
+  margin-top: 1%;
+  width: 70%;
+  height: 8vh;
+  overflow: auto;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: break-spaces;
+}
+
+.scrollTextTheatres {
+  margin-top: none;
+  width: 100%;
+  height: 70%;
+  overflow: auto;
+}
+
+.add-watcher-btn {
+  display: block;
+  padding-top: 4px;
+  margin: auto;
+  background-color: #e23a3a;
+  color: white;
+  border-radius: 30px;
+  width: 40%;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15000000596046448);
+}
+.add-theatre-btn:hover {
+  background-color: grey;
+  border-color: black;
+}
+
+.theatreButton {
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+  width: 80%;
+  height: 5vh;
+  font-size: 15px;
+  background-color: #e5e5e5;
+  padding: 1 rem;
+  cursor: pointer;
+}
+.go-back {
+  background-color: #8cacc4;
+  padding-top: 6px;
+  display: block;
+  margin: auto;
+  color: white;
+  border-radius: 30px;
+  width: 10%;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  justify-content: left;
+  position: absolute;
+  top: 20%;
+  right: 23;
+  width: 120px;
+  transform: translateY(-80%);
+}
+
+.add-theatre-btn {
+  background-color: #e23a3a;
+  padding-top: 6px;
+  display: block;
+  margin: auto;
+  color: white;
+  border-radius: 30px;
+  width: 50%;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15000000596046448);
+}
+.add-theatre-btn:hover {
+  background-color: grey;
+  border-color: black;
+}
+
+.theatreName {
+  display: block;
+  border: 0px none;
+  font-size: 5vh;
+  text-align: center;
+  background-color: #e5e5e5;
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 30px;
+}
+.theatreTitle {
+  font-size: 35px;
+  text-align: center;
+  font-family: Manrope;
+  font-weight: 700;
+}
+.matchesTitle {
+  display: block;
+  border: 0px none;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  margin-top: 5%;
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+/* Invite Watcher Page */
+
+.iw-card {
+  text-align: center;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  background-color: #e23a3a;
+  color: white;
+  margin: 2rem 3rem;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 0.875;
+  font-weight: 500;
+  line-height: 1.75;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15000000596046448);
+}
+
+.btn:hover {
+  background-color: grey;
+  border-color: black;
+}
+
+.modal {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 25rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+}
+
+.modal-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transform: translateZ(0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.5em 1.5em 1.5em 1.5em;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (min-width: 500px) {
+  /* Center the Modal! */
+  .modal-area {
+    left: 50%;
+    top: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    max-width: 25em;
+    max-height: calc(100% - 1em);
+  }
+}
+
+._modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  line-height: 1;
+  background: #f6f6f7;
+  border: 0;
+  box-shadow: 0;
+  cursor: pointer;
+}
+
+._modal-close-icon {
+  width: 25px;
+  height: 25px;
+  fill: transparent;
+  stroke: black;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.modal-body {
+  padding-top: 0.25em;
+}
+._hide-visual {
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.scroll-lock {
+  overflow: hidden;
+  margin-right: 17px;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.errorMessage {
+  color: #e23a3a;
+}
+
+.watcher-img {
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* User Profile */
+
+.ProfileView {
+  margin-top: 1.75rem;
+  justify-content: center;
+}
+
+.UserInfo {
+  width: 40%;
+  background-color: #dfdada;
+  height: 30vh;
+  border-radius: 25px;
+  text-align: center;
+  margin: auto;
+}
+.NotiBlock {
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 5vh;
+  border-radius: 5px;
+}
+.UserText {
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+  height: 10vh;
+  overflow: auto;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.UserTextPass {
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  height: 5vh;
+  font-size: 18px;
+}
+.Notification {
+  margin-top: 2%;
+  overflow: auto;
+  background-color: #dfdada;
+  border-radius: 30px;
+  text-indent: 50px;
+  font-size: 18px;
+  color: #e23a3a;
+  font-weight: bold;
+  height: 45px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.ChangeButton {
+  display: block;
+  margin: auto;
+  background-color: #e23a3a;
+  color: white;
+  border-radius: 30px;
+  width: 50%;
+  height: 6vh;
+  font-weight: regular;
+  cursor: pointer;
+}
+
+.ClearButton {
+  display: block;
+  margin: auto;
+  background-color: #e23a3a;
+  color: white;
+  border-radius: 30px;
+  width: 25%;
+  height: 6vh;
+  font-weight: regular;
+  margin-right: 0%;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.Username {
+  display: block;
+  border: 0px none;
+  margin: auto;
+  font-size: 5vh;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* Movie Selection (Flick) */
+
+.movie-selection {
+  text-align: center;
+  margin-top: 1.5rem;
+  justify-content: center;
+  overflow: auto;
+}
+
+.movie-pane {
+  background-color: #e23a3a;
+  height: 300px;
+  width: 600px;
+  margin: auto;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon-pane {
+  height: 25%;
+  margin: auto;
+  width: 590px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.movie-title {
+  font-size: 45px;
+  padding: 25px 0;
+  font-family: Roboto;
+  font-weight: 200px;
+}
+
+.movie-genres {
+  font-size: 18px;
+}
+
+.movie-description {
+  font-size: 18px;
+  width: 85%;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.check {
+  width: 120px;
+  height: 170px;
+  padding: 50px 0;
+  display: flex-start;
+  cursor: pointer;
+}
+
+.divider {
+  display: inline-block;
+  width: 15rem;
+}
+
+/* Add Theatre Page */
+
+.card {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.theatre-img {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: 25%;
+  margin: 0 auto;
+  height: 18%;
+  max-height: 70vh;
+  margin-top: 15rem;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #999;
+  text-align: center;
+  justify-content: center;
+}
+
+.close-icon {
+  content: "x";
+  cursor: pointer;
+  position: fixed;
+  right: calc(38% - 40px);
+  top: calc(112vh - 75vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.btn-return-back {
+  font-family: "Roboto", sans-serif;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  background-color: #e23a3a;
+  color: rgb(216, 16, 16);
+  margin: 6rem 3rem;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+.btn-return-back:hover {
+  background-color: grey;
+  border-color: black;
+}
+
+.help {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.close-icon {
+  content: "x";
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+.faq {
+  text-align: left;
+  width: 80%;
+}
